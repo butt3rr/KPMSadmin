@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9bacb4"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+
+    <!-- Wrap elements in a CardView for visual grouping -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvStaffLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="STAFF LOGIN"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#091b68" />
+
+            <!-- Staff ID Input -->
+            <LinearLayout
+                android:id="@+id/linearLayoutStaffID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Staff ID:"
+                    android:textSize="16dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/log_username"
+                    android:hint="Enter Username"
+                    android:inputType="text"/>
+            </LinearLayout>
+
+            <!-- Password Input -->
+            <LinearLayout
+                android:id="@+id/linearLayoutPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password: "
+                    android:textSize="16dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/log_password"
+                    android:hint="Enter Password"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <!-- Login Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_marginTop="16dp"
+                app:cornerRadius="5dp"
+                android:backgroundTint="#091b68"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

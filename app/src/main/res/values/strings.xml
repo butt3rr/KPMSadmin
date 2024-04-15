@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">KPMSadmin</string>
+
+
+    <string-array name="courier_names_array">
+        <item>DHL</item>
+        <item>Shopee Express</item>
+        <item>Flash Express</item>
+        <item>JNT</item>
+        <item>Pos Laju</item>
+        <item>SkyNet</item>
+        <item>Ninja Van</item>
+        <item>Pgeon</item>
+        <item>GDex</item>
+        <item>FedEx</item>
+        <item>ABX Express</item>
+        <item>City Link</item>
+        <item>Lalamove</item>
+        <item>Others</item>
+        <!-- Add more items as needed -->
+    </string-array>
+
+    <string name="search_icon_description">Search</string>
+
+</resources>
